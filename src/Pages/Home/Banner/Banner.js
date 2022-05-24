@@ -36,9 +36,9 @@ const Banner = () => {
                 </div>
             </div>
             <div class="mx-20 my-10 text-center">
-                <h1 class="py-6 text-7xl">Cooking is our passion</h1>
+                <h1 class="py-6 text-5xl md:text-7xl">Cooking is our passion</h1>
                 <Devider/>
-                <p class="py-5 text-4xl leading-relaxed">We know that your home is important to you, just like providing a beautiful product at a value price is important to us.</p>
+                <p class="py-5 text-2xl md:text-4xl leading-relaxed">We know that your home is important to you, just like providing a beautiful product at a value price is important to us.</p>
             </div>
         </div>
     );
