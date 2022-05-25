@@ -4,7 +4,7 @@ import './Summary.css';
 
 const Summary = () => {
     return (
-        <div class="text-center mx-16 my-10">
+        <div class="text-center mx-16 my-10" id='bSummary'>
             <div class="text-center">
                 <h1 class="py-6 text-5xl md:text-7xl">Business Overview</h1>
             </div>

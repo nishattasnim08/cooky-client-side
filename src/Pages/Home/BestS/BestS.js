@@ -4,7 +4,7 @@ import './BestS.css';
 
 const BestS = () => {
     return (
-        <div class="mx-16 my-10">
+        <div class="mx-16 my-10" id='bSelling'>
             <div class="text-center">
                 <h1 class="py-6 text-5xl md:text-7xl">Our Best Selling Products</h1>
             </div>

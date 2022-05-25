@@ -10,6 +10,8 @@ import Blog from './Pages/Blogs/Blog';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import LogIn from './Authentication/LogIn/LogIn';
 import Error from './Pages/Shared/404/Error';
+import BestS from './Pages/Home/BestS/BestS';
+import Subscribe from './Pages/Home/Subscribe/Subscribe';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/tools" element={<Tools />} />
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/bSelling" element={<BestS />} />
+        <Route path="/subscribe" element={<Subscribe />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/logIn" element={<LogIn />} />

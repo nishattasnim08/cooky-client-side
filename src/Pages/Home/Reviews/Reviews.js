@@ -4,7 +4,7 @@ import './Reviews.css';
 
 const Reviews = () => {
     return (
-        <div class="my-10">
+        <div class="my-10" id='reviews'>
             <div class="mx-20 my-10 text-center">
                 <h1 class="py-6 text-5xl md:text-7xl">Customer Reviews</h1>
                 <Devider />

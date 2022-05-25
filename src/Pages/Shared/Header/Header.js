@@ -16,10 +16,10 @@ const Header = () => {
     const menuItems = <>
         <li><Link to='/home'>Home</Link></li>
         <li><a href='/home/#tools'>Tools</a></li>
-        <li><Link to='/bSummary'>Business Summary</Link></li>
-        <li><Link to='/reviews'>Reviews</Link></li>
-        <li><Link to='/bSelling'>Best Selling</Link></li>
-        <li><Link to='/subscribe'>Subscribe</Link></li>
+        <li><a href='/home/#bSummary'>Business Summary</a></li>
+        <li><a href='/home/#reviews'>Reviews</a></li>
+        <li><a href='/home/#bSelling'>Best Selling</a></li>
+        <li><a href='/home/#subscribe'>Subscribe</a></li>
         <li><Link to='/blogs'>Blogs</Link></li>
         <li><Link to='/portfolio'>Portfolio</Link></li>
         <li tabindex="0">
