@@ -4,7 +4,7 @@ import './Tools.css'
 
 const Tools = () => {
     return (
-        <div class="mx-16 my-10">
+        <div class="mx-16 my-10" id='tools'>
             <div class="text-center">
                 <h1 class="py-6 text-5xl md:text-7xl">Our Products</h1>
             </div>

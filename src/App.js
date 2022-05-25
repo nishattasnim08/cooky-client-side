@@ -7,6 +7,9 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Summary from './Pages/Home/Summary/Summary';
 import Reviews from './Pages/Home/Reviews/Reviews';
 import Blog from './Pages/Blogs/Blog';
+import Portfolio from './Pages/Portfolio/Portfolio';
+import LogIn from './Authentication/LogIn/LogIn';
+import Error from './Pages/Shared/404/Error';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/blogs" element={<Blog />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/logIn" element={<LogIn />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer/>
     </div>

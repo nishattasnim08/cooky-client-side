@@ -2,12 +2,20 @@ import React from 'react';
 import './Header.css'
 import icon from '../../../images/icons/utensils-solid.png';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import Loading from '../Loading/Loading';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
 
+    const [user, loading, error] = useAuthState(auth);
+    if (loading) {
+        return <Loading />
+    }
     const menuItems = <>
         <li><Link to='/home'>Home</Link></li>
-        <li><Link to='/tools'>Tools</Link></li>
+        <li><a href='/home/#tools'>Tools</a></li>
         <li><Link to='/bSummary'>Business Summary</Link></li>
         <li><Link to='/reviews'>Reviews</Link></li>
         <li><Link to='/bSelling'>Best Selling</Link></li>
@@ -43,7 +51,7 @@ const Header = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    
+
                     <Link to='/' class="btn btn-ghost normal-case text-xl"><img class="w-5 m-2" src={icon} alt="" /> Cooky</Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -52,8 +60,14 @@ const Header = () => {
                     </ul>
                 </div>
                 <div class="navbar-end space-x-5">
-                    <a class="btn">Sign Up</a>
-                    <a class="btn">Log In</a>
+                    {user?
+                    <p onClick={()=>  signOut(auth)} class="btn">Log Out</p>
+                    :
+                    <>
+                    <Link to='/signUp' class="btn">Sign Up</Link>
+                    <Link to='/logIn' class="btn">Log In</Link>
+                    </>
+                    }
                 </div>
             </div>
         </div>
