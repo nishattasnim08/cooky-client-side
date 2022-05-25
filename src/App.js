@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
 import Summary from './Pages/Home/Summary/Summary';
 import Reviews from './Pages/Home/Reviews/Reviews';
+import Blog from './Pages/Blogs/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/tools" element={<Tools />} />
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/blogs" element={<Blog />} />
       </Routes>
       <Footer/>
     </div>

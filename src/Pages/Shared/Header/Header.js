@@ -12,6 +12,8 @@ const Header = () => {
         <li><Link to='/reviews'>Reviews</Link></li>
         <li><Link to='/bSelling'>Best Selling</Link></li>
         <li><Link to='/subscribe'>Subscribe</Link></li>
+        <li><Link to='/blogs'>Blogs</Link></li>
+        <li><Link to='/portfolio'>Portfolio</Link></li>
         <li tabindex="0">
             <Link to='/dashboard' class="justify-between">
                 Dashboard
@@ -20,6 +22,10 @@ const Header = () => {
             <ul class="p-2">
                 <li><Link to='/myOrders'>My Orders</Link></li>
                 <li><Link to='/addReview'>Add Review</Link></li>
+                <li><Link to='/manageOrders'>Manage Orders</Link></li>
+                <li><Link to='/addProduct'>Add Product</Link></li>
+                <li><Link to='/makeAdmin'>Make Admin</Link></li>
+                <li><Link to='/manageProducts'>Manage Products</Link></li>
                 <li><Link to='/myProfile'>My Profile</Link></li>
             </ul>
         </li>
