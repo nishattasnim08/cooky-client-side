@@ -13,6 +13,8 @@ import Error from './Pages/Shared/404/Error';
 import BestS from './Pages/Home/BestS/BestS';
 import Subscribe from './Pages/Home/Subscribe/Subscribe';
 import SignUp from './Authentication/SignUp/SignUp';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/subscribe" element={<Subscribe />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/myOrders" element={<MyOrders />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<Error />} />
