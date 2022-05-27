@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Devider from '../../Shared/Devider/Devider';
 import './Tools.css'
 
 const Tools = () => {
+
+    const [items, setItems] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:5000/items")
+            .then((res) => res.json())
+            .then((data) => setItems(data));
+    }, []);
+
+
     return (
         <div class="mx-16 my-10" id='tools'>
             <div class="text-center">
@@ -10,66 +19,24 @@ const Tools = () => {
             </div>
             <Devider />
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
+
+                {items.map(item =>
+                    <div class="card w-90 bg-base-100 shadow-xl my-8">
+                        <figure><img src={item.picture} alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">{item.name}</h2>
+                            <p>{item.about}</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-bg-#dca54c mt-6">Buy Now</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-90 bg-base-100 shadow-xl my-8">
-                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary mt-6">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
+                )}
+
+
+
+
+
             </div>
         </div>
     );

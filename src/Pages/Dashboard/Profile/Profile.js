@@ -12,7 +12,7 @@ const Profile = () => {
     return (
         <div class="mx-16 my-10">
             <div class="text-center">
-                <h1 class="py-6 text-5xl md:text-7xl">Our Best Selling Products</h1>
+                <h1 class="py-6 text-5xl md:text-7xl">My Profile</h1>
             </div>
             <Devider />
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 my-10">

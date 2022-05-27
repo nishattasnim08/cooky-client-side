@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "picture": "https://i.ibb.co/ZJbzRLD/Wood-Spoon-Set.png",
+      "name": "Wooden Spoon Set",
+      "about": "Whether it's wooden or metal, a perforated (or slotted) spoon acts like a miniature strainer, removing solids from liquids—think pulling potatoes or small pasta noodles from boiling water."
+    },
+    {
+      "id": 2,
+      "picture": "https://i.ibb.co/qJgMPJb/Non-Stick-Cookware.png",
+      "name": "Non Stick Cookware",
+      "about": "Easy to clean, lightweight nonstick pans are ideal for scrambling eggs or wilting greens. Look for ceramic coating, as some nonstick pans are made with PFOAs, chemicals that may be harmful to your health and the environment."
+    },
+    {
+      "id": 3,
+      "picture": "https://i.ibb.co/7RpHgFH/Knife.png",
+      "name": "Chef's Knife",
+      "about": "A good knife is a chef's best friend. This is one of the few things that you'll thank yourself for investing in. Carbon-plated stainless steel will stay sharp over time, but go to a specialty store to find the best match for you. Choose a knife that you feel comfortable handling. It should feel balanced in your hand, easy to hold and control, not too heavy, but definitely not flimsy."
+    },
+    {
+      "id": 4,
+      "picture": "https://i.ibb.co/gwpXFX3/Kitchen-Sissor.png",
+      "name": "Kitchen Shears",
+      "about": "Super basic, super useful. Every day, you'll reach for shears to open up packaging, snip away herb stems, or trim fat from meats. Once in a while, you might use them to cut up a whole chicken or trim the crust off a pie. Look for a pair that dismantles for cleaning, so gunk doesn’t build up in the hinge."
+    },
+    {
+      "id": 5,
+      "picture": "https://i.ibb.co/FDvJrPd/Kitchen-Drawer-Organizer.png",
+      "name": "Kitchen Drawer Organizer",
+      "about": "Everyone needs a solid kitchen drawer organizer for their utensils. What we love about this particular utensil organizer are the adjustable non-slip compartments. They keep your spoons, forks and knives snugly stacked, with no shifting, even as you open or close the drawer."
+    },
+    {
+      "id": 6,
+      "picture": "https://i.ibb.co/r4cgXRF/Juice-Blender.png",
+      "name": "Juice Blender",
+      "about": "Once I handled an immersion blender, I kissed my standing blender goodbye. This handheld tool makes it so easy to blend soups, smoothies, and pestos with the push of a button. I find much easier to handle than a traditional blender, and it’s great because it takes up much less space, too."
+    },
+    {
+      "id": 7,
+      "picture": "https://i.ibb.co/XFLR2tq/Hand-Whisk.png",
+      "name": "Hand Whisk",
+      "about": "Sturdy metal whisks come in all shapes and sizes. Choose a mid-sized whisk with a handle that fits comfortably in your hand. Use it to mix dry ingredients together before baking, stir eggs for a frittata or emulsify a vinaigrette. You need a flat whisk, too. "
+    },
+    {
+      "id": 8,
+      "picture": "https://i.ibb.co/Wn0qV44/Cutting-Board.png",
+      "name": "Cutting Board",
+      "about": "A sturdy, stable surface is essential when it comes to prepping your food. A wooden cutting board will help protect your knife from dulling quickly, as well as make cleanup a breeze. Here's how to take of your cutting board. "
+    },
+    {
+      "id": 9,
+      "picture": "https://i.ibb.co/BV2HRRF/Grater.png",
+      "name": "Box Grater",
+      "about": "I find myself reaching for this sturdy shredder at the most unexpected times—whether it's shredding zucchini for healthy-ish muffins or softening butter extra quick. It might take a little extra elbow grease compared to a food processor, but I love how my box grater doesn't take up much space."
+    }
+  ]
