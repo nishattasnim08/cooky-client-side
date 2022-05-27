@@ -13,12 +13,13 @@ const Header = () => {
     if (loading) {
         return <Loading />
     }
+    if (user) {
+        console.log(user.displayName);
+    }
     const menuItems = <>
         <li><Link to='/home'>Home</Link></li>
         <li><a href='/home/#tools'>Tools</a></li>
-        <li><a href='/home/#bSummary'>Business Summary</a></li>
         <li><a href='/home/#reviews'>Reviews</a></li>
-        <li><a href='/home/#bSelling'>Best Selling</a></li>
         <li><a href='/home/#subscribe'>Subscribe</a></li>
         <li><Link to='/blogs'>Blogs</Link></li>
         <li><Link to='/portfolio'>Portfolio</Link></li>
@@ -61,7 +62,10 @@ const Header = () => {
                 </div>
                 <div class="navbar-end space-x-5">
                     {user?
+                    <>
+                    <p class="">{user.displayName}</p>
                     <p onClick={()=>  signOut(auth)} class="btn">Log Out</p>
+                    </>
                     :
                     <>
                     <Link to='/signUp' class="btn">Sign Up</Link>
