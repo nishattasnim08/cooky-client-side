@@ -16,6 +16,7 @@ import SignUp from './Authentication/SignUp/SignUp';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 import AddReview from './Pages/Dashboard/AddReview/AddReview';
+import AddProduct from './Pages/Dashboard/Dashboard/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/myOrders" element={<MyOrders />} />
         <Route path="/addReview" element={<AddReview />} />
+        <Route path="/addProduct" element={<AddProduct />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<Error />} />
