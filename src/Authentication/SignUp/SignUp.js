@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Devider from '../../Pages/Shared/Devider/Devider';
 import Loading from '../../Pages/Shared/Loading/Loading';
+import SocialLogin from '../SocialLogIn/SocialLogin';
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -44,9 +45,9 @@ const SignUp = () => {
             </div>
             <Devider />
 
-            <div class="mx-16 text-center">
+            <div class="mx-16 my-10 text-center">
                 <p className='my-5'>{error && error.message}</p>
-                <form onSubmit={handleSubmit(onSubmit)} class="form-control w-1/4 mx-auto my-10">
+                <form onSubmit={handleSubmit(onSubmit)} class="form-control w-1/4 mx-auto">
                     <label class="label">
                         <span class="label-text">Your Name</span>
                     </label>
@@ -75,8 +76,10 @@ const SignUp = () => {
                         <span className='w-2/5'>Confirm Password</span>
                         <input {...register("confirmPassword", { required: true })} type="password" placeholder="abc@#_123ABC" class="w-3/5 input input-bordered" />
                     </label>
-                    <input type="submit" value={"Sign Up"} className="btn btn-warning m-6" />
+                    <input type="submit" value={"Sign Up"} className="btn btn-warning mt-6" />
                 </form>
+                <div class="divider">OR</div>
+                <SocialLogin/>
                 <p class="p-4">Already have an account? <span><Link to='/logIn'>Log In</Link></span></p>
 
             </div>
