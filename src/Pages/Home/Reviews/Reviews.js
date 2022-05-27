@@ -13,7 +13,7 @@ const Reviews = () => {
                 <div class="flex items-center">
                 <div class="avatar">
                     <div class="w-24 rounded-full">
-                        <img src="https://api.lorem.space/image/face?hash=28212" />
+                        <img src="https://img.freepik.com/free-photo/portrait-young-businesswoman-holding-eyeglasses-hand-against-gray-backdrop_23-2148029483.jpg?t=st=1653672700~exp=1653673300~hmac=6a538b372cd6694f1bc2e5a08acaa2a62653833e75a005fd8d7c178eca02061f&w=740" />
                     </div>
                 </div>
                 <div class=" mx-10 rating gap-1">
@@ -30,7 +30,7 @@ const Reviews = () => {
                 <div class="flex items-center">
                 <div class="avatar">
                     <div class="w-24 rounded-full">
-                        <img src="https://api.lorem.space/image/face?hash=28212" />
+                        <img src="https://img.freepik.com/free-photo/handsome-man-white-shirt-posing-attractive-guy-with-fashion-hairstyle-confident-man-with-short-beard-adult-boy-with-brown-hair-closeup-portrait_186202-8545.jpg?t=st=1653672949~exp=1653673549~hmac=c89dea4c0f2e91c6c6897a64d5aa6bd62409cbf0cc2669f865295c6fd682d32f&w=740" />
                     </div>
                 </div>
                 <div class=" mx-10 rating gap-1">
@@ -47,7 +47,7 @@ const Reviews = () => {
                 <div class="flex items-center">
                 <div class="avatar">
                     <div class="w-24 rounded-full">
-                        <img src="https://api.lorem.space/image/face?hash=28212" />
+                        <img src="https://img.freepik.com/free-photo/beautiful-adult-woman-with-long-brown-curly-hair-fashion-model-white-background_186202-3505.jpg?t=st=1653672700~exp=1653673300~hmac=ff9a9bf9643fad11db87b51aebae71059f4f28fe6e8eb0bd006bddba9ec5a34c&w=740" />
                     </div>
                 </div>
                 <div class=" mx-10 rating gap-1">
