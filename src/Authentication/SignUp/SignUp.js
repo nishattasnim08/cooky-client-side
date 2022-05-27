@@ -76,7 +76,7 @@ const SignUp = () => {
                         <span className='w-2/5'>Confirm Password</span>
                         <input {...register("confirmPassword", { required: true })} type="password" placeholder="abc@#_123ABC" class="w-3/5 input input-bordered" />
                     </label>
-                    <input type="submit" value={"Sign Up"} className="btn btn-warning mt-6" />
+                    <input type="submit" value={"Sign Up"} className="btn btn-bg-#dca54c w-1/3 mx-auto mt-6" />
                 </form>
                 <div class="divider">OR</div>
                 <SocialLogin/>

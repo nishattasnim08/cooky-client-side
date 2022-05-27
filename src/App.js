@@ -15,6 +15,7 @@ import Subscribe from './Pages/Home/Subscribe/Subscribe';
 import SignUp from './Authentication/SignUp/SignUp';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
+import AddReview from './Pages/Dashboard/AddReview/AddReview';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/myOrders" element={<MyOrders />} />
+        <Route path="/addReview" element={<AddReview />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<Error />} />

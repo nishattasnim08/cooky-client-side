@@ -19,7 +19,7 @@ const SocialLogin = () => {
     return (
         <div>
             <p>{error && error.message}</p>
-            <button onClick={() => signInWithGoogle()} class="btn btn-warning mx-6">Google</button>
+            <button onClick={() => signInWithGoogle()} class="btn btn-bg-#dca54c w-1/8 mx-auto mx-6">Google</button>
         </div>
     );
 };
