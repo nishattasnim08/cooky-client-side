@@ -7,14 +7,40 @@ import Loading from '../../Shared/Loading/Loading';
 
 const Profile = () => {
     const [user, loading] = useAuthState(auth);
-    
+
     if (loading) {
         return <Loading />
     }
-    
+
     if (user) {
         console.log(user.displayName);
     }
+
+    const updateProfile = (event) => {
+        event.preventDefault();
+
+        const image = event.target.image.value;
+        const address = event.target.address.value;
+        const contact = event.target.contact.value;
+        const linkedin = event.target.linkedin.value;
+
+        const data = {user, image, address, contact, linkedin};
+
+        fetch(`http://localhost:5000/user`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((result) => {
+                console.log(result);
+                alert('User updated!');
+            })
+
+        console.log(image, address, contact, linkedin);
+
+    }
+
     return (
         <div class="mx-16 my-10">
             <div class="text-center">
@@ -34,23 +60,23 @@ const Profile = () => {
                 <div>
                     <p className='text-center py-3'>Update Profile</p>
                     <Devider />
-                    <form class="form-control mx-auto">
+                    <form onSubmit={updateProfile} class="form-control mx-auto">
                         <label class="label">
                             <span class="label-text">Image</span>
                         </label>
-                        <input type="url" placeholder="Your profile image here" class="input input-bordered" />
+                        <input type="url" placeholder="Your profile image here" name='image' class="input input-bordered" />
                         <label class="label">
                             <span class="label-text">Address</span>
                         </label>
-                        <input type="text" placeholder="Your address here" class="input input-bordered" />
+                        <input type="text" placeholder="Your address here" name='address' class="input input-bordered" />
                         <label class="label">
                             <span class="label-text">Contact No.</span>
                         </label>
-                        <input type="text" placeholder="Your contact number" class="input input-bordered" />
+                        <input type="text" placeholder="Your contact number" name='contact' class="input input-bordered" />
                         <label class="label">
                             <span class="label-text">LinkedIn Profile</span>
                         </label>
-                        <input type="url" placeholder="linkedin profile link" class="input input-bordered" />
+                        <input type="url" placeholder="linkedin profile link" name='linkedin' class="input input-bordered" />
                         <input type="submit" value={"Update"} className="btn btn-bg-#dca54c w-1/2 mx-auto mt-6" />
                     </form>
                 </div>
