@@ -7,7 +7,7 @@ const Tools = () => {
 
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/items")
+        fetch("https://calm-shore-01458.herokuapp.com/items")
             .then((res) => res.json())
             .then((data) => setItems(data));
     }, []);
@@ -32,7 +32,7 @@ const Tools = () => {
                             <p><span className='font-bold'>Price Per Unit:</span> {item.price} $</p>
                             <p><span className='font-bold'>Minimum Order Quantity:</span> {item.mOrder}</p>
                             <div class="card-actions justify-end">
-                                <button onClick={() =>  nevigate(`/tool/${item._id}`)} class="btn btn-bg-#dca54c mt-6">Buy Now</button>
+                                <button onClick={() => nevigate(`/tool/${item._id}`)} class="btn btn-bg-#dca54c mt-6">Buy Now</button>
                             </div>
                         </div>
                     </div>

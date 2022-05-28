@@ -6,7 +6,7 @@ const Reviews = () => {
 
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/review")
+        fetch("https://calm-shore-01458.herokuapp.com/review")
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, []);
@@ -30,8 +30,8 @@ const Reviews = () => {
                                 Array.from(Array(review.rating).keys()).map(i => <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" disabled checked />)
                             }
                             {
-                                Array.from(Array(5-review.rating).keys()).map(i => <input type="radio" name="rating-3" class="mask mask-heart bg-stone-500" disabled/>)
-                                
+                                Array.from(Array(5 - review.rating).keys()).map(i => <input type="radio" name="rating-3" class="mask mask-heart bg-stone-500" disabled />)
+
                             }
                         </div>
                     </div>

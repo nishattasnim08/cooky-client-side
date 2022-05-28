@@ -10,7 +10,7 @@ const AddReview = () => {
         const rating = parseInt(event.target.rating.value);
         const image = event.target.image.value;
         const data = { reviewText, rating, image };
-        fetch(`http://localhost:5000/review`, {
+        fetch(`https://calm-shore-01458.herokuapp.com/review`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

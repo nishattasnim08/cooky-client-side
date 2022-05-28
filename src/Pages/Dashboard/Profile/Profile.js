@@ -24,9 +24,9 @@ const Profile = () => {
         const contact = event.target.contact.value;
         const linkedin = event.target.linkedin.value;
 
-        const data = {user, image, address, contact, linkedin};
+        const data = { user, image, address, contact, linkedin };
 
-        fetch(`http://localhost:5000/user`, {
+        fetch(`https://calm-shore-01458.herokuapp.com/user`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

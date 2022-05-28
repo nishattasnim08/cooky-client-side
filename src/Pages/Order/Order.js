@@ -13,7 +13,7 @@ const Order = () => {
     const { id } = useParams();
     const [item, setItem] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/item/${id}`)
+        fetch(`https://calm-shore-01458.herokuapp.com/item/${id}`)
             .then((res) => res.json())
             .then((data) => setItem(data));
     }, []);
@@ -40,7 +40,7 @@ const Order = () => {
         let quantity = parseInt(item.quantity);
         const total = orderQuantity * parseInt(item.price);
 
-        
+
         const data = { address, contact, orderQuantity, total, userName, userEmail, item };
 
         console.log(data);
@@ -49,7 +49,7 @@ const Order = () => {
             if (orderQuantity < quantity) {
 
 
-                fetch(`http://localhost:5000/order`, {
+                fetch(`https://calm-shore-01458.herokuapp.com/order`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(data),
@@ -59,7 +59,7 @@ const Order = () => {
 
                         quantity = quantity - orderQuantity;
 
-                        fetch(`http://localhost:5000/item/${id}`, {
+                        fetch(`https://calm-shore-01458.herokuapp.com/item/${id}`, {
                             method: "PUT",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({ quantity }),
