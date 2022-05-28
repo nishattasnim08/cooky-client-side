@@ -70,7 +70,19 @@ const Blog = () => {
                     </p>
                 </div>
                 <div class="blog-section">
-                    <h1 class="pb-6 text-xl md:text-3xl font-bold">4. What is a unit test? Why should write unit tests?</h1>
+                    <h1 class="pb-6 text-xl md:text-3xl font-bold">4. Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts</h1>
+                    <p class="text-justify px-8 text-base md:text-2xl">
+                    Because react has a built-in process, setProducts is used. When we set a product, it reloads, however when we set products = [...], it does not.
+                    </p>
+                </div>
+                <div class="blog-section">
+                    <h1 class="pb-6 text-xl md:text-3xl font-bold">5. You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?</h1>
+                    <p class="text-justify px-8 text-base md:text-2xl">
+                    findedProducts = products.filter(product => product.name===name)
+                    </p>
+                </div>
+                <div class="blog-section">
+                    <h1 class="pb-6 text-xl md:text-3xl font-bold">6. What is a unit test? Why should write unit tests?</h1>
                     <p class="text-justify px-8 text-base md:text-2xl">
                         Unit testing is a software testing process that involves testing "units," or individual program components. To ensure that their code is working properly, developers build unit tests. This aids future bug detection and protection.
                         <br />
