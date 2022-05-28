@@ -111,6 +111,19 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+            <div>
+                <div>
+                    <p class="py-5 text-3xl md:text-5xl leading-relaxed">Previous Projects</p>
+                    <Devider />
+                </div>
+                <div>
+                    <ul class="p-10 list-disc w-1/3 mx-auto text-justify">
+                        <li class="px-12 py-2"><a href="https://charming-faun-dcc162.netlify.app/" target={"_blank"}>Bag Bazar</a></li>
+                        <li class="px-12 py-2"><a href="https://coruscating-platypus-fadd4d.netlify.app/" target={"_blank"}></a>Camera Haul</li>
+                        <li class="px-12 py-2"><a href="https://fashion-world-60392.web.app/" target={"_blank"}>Fashion World</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 };
