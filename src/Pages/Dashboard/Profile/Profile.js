@@ -30,6 +30,10 @@ const Profile = () => {
                     <Devider />
                     <form class="form-control mx-auto">
                         <label class="label">
+                            <span class="label-text">Image</span>
+                        </label>
+                        <input type="url" placeholder="Your profile image here" class="input input-bordered" />
+                        <label class="label">
                             <span class="label-text">Address</span>
                         </label>
                         <input type="text" placeholder="Your address here" class="input input-bordered" />

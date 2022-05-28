@@ -22,10 +22,13 @@ const Tools = () => {
 
                 {items.map(item =>
                     <div class="card w-90 bg-base-100 shadow-xl my-8">
-                        <figure><img src={item.picture} alt="Shoes" /></figure>
+                        <figure><img src={item.picture} alt="" /></figure>
                         <div class="card-body">
                             <h2 class="card-title">{item.name}</h2>
                             <p>{item.about}</p>
+                            <p><span className='font-bold'>Available Quantity:</span> {item.quantity}</p>
+                            <p><span className='font-bold'>Price Per Unit:</span> {item.price} $</p>
+                            <p><span className='font-bold'>Minimum Order Quantity:</span> {item.mOrder}</p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-bg-#dca54c mt-6">Buy Now</button>
                             </div>
