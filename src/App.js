@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Pages/Shared/Header/Header';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Tools from './Pages/Home/Tools/Tools';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/tools" element={<Tools />} />
-        <Route path="/order" element={<Order />} />
+        <Route path="/tool/:id" element={<Order />} />
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/bSelling" element={<BestS />} />

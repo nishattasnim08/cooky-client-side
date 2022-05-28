@@ -3,9 +3,15 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Devider from '../../Shared/Devider/Devider';
+import Loading from '../../Shared/Loading/Loading';
 
 const Profile = () => {
-    const [user] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
+    
+    if (loading) {
+        return <Loading />
+    }
+    
     if (user) {
         console.log(user.displayName);
     }

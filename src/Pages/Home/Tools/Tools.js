@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Devider from '../../Shared/Devider/Devider';
 import './Tools.css'
 
@@ -11,6 +12,7 @@ const Tools = () => {
             .then((data) => setItems(data));
     }, []);
 
+    const nevigate = useNavigate();
 
     return (
         <div class="mx-16 my-10" id='tools'>
@@ -30,7 +32,7 @@ const Tools = () => {
                             <p><span className='font-bold'>Price Per Unit:</span> {item.price} $</p>
                             <p><span className='font-bold'>Minimum Order Quantity:</span> {item.mOrder}</p>
                             <div class="card-actions justify-end">
-                                <button class="btn btn-bg-#dca54c mt-6">Buy Now</button>
+                                <button onClick={() =>  nevigate(`/tool/${item._id}`)} class="btn btn-bg-#dca54c mt-6">Buy Now</button>
                             </div>
                         </div>
                     </div>
