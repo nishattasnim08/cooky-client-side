@@ -1,7 +1,7 @@
 import React from 'react';
 import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Pages/Shared/Loading/Loading';
 import Devider from '../../Pages/Shared/Devider/Devider';
 import SocialLogin from '../SocialLogIn/SocialLogin';
@@ -9,6 +9,8 @@ import { useForm } from 'react-hook-form';
 
 const LogIn = () => {
     const navigate = useNavigate();
+    const location = useLocation();
+
     const { register, handleSubmit } = useForm();
     const [
         signInWithEmailAndPassword,
@@ -21,13 +23,14 @@ const LogIn = () => {
         signInWithEmailAndPassword(data.email, data.password);
     };
 
+    const from = location.state?.from?.pathname || "/";
     if (loading) {
         return <Loading />
     }
 
     if (user) {
         console.log(user);
-        navigate('/home');
+        navigate(from, { replace: true })
     }
     return (
         <div class="mx-16 my-10">

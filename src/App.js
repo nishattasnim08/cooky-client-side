@@ -19,6 +19,7 @@ import AddReview from './Pages/Dashboard/AddReview/AddReview';
 import AddProduct from './Pages/Dashboard/Dashboard/AddProduct/AddProduct';
 import Profile from './Pages/Dashboard/Profile/Profile';
 import Order from './Pages/Order/Order';
+import RequireAuth from './RequireAuth';
 
 function App() {
   return (
@@ -28,20 +29,24 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/tools" element={<Tools />} />
-        <Route path="/tool/:id" element={<Order />} />
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/bSelling" element={<BestS />} />
         <Route path="/subscribe" element={<Subscribe />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/myOrders" element={<MyOrders />} />
         <Route path="/addReview" element={<AddReview />} />
         <Route path="/addProduct" element={<AddProduct />} />
         <Route path="/myProfile" element={<Profile />} />
         <Route path="/logIn" element={<LogIn />} />
         <Route path="/signUp" element={<SignUp />} />
+        <Route path="/tool/:id" element={<RequireAuth>
+          <Order/>
+        </RequireAuth>} />
+        <Route path="/dashboard" element={<RequireAuth>
+          <Dashboard/>
+        </RequireAuth>} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer/>
