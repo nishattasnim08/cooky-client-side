@@ -18,6 +18,7 @@ import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 import AddReview from './Pages/Dashboard/AddReview/AddReview';
 import AddProduct from './Pages/Dashboard/Dashboard/AddProduct/AddProduct';
 import Profile from './Pages/Dashboard/Profile/Profile';
+import Order from './Pages/Order/Order';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/tools" element={<Tools />} />
+        <Route path="/order" element={<Order />} />
         <Route path="/bSummary" element={<Summary />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/bSelling" element={<BestS />} />
