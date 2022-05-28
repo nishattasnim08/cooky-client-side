@@ -4,7 +4,7 @@ import subscribe from '../../../images/subscribe.jpg';
 
 const Subscribe = () => {
     return (
-        <div class="mx-16 my-10" id='subscribe'>
+        <div className="hidden lg:block mx-16 my-10" id='subscribe'>
             <div class="text-center">
                 <h1 class="py-6 text-5xl md:text-7xl">Subscribe</h1>
             </div>
