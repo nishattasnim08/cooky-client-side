@@ -40,10 +40,11 @@ const Order = () => {
         let quantity = parseInt(item.quantity);
         const total = orderQuantity * parseInt(item.price);
 
-        const data = { address, contact, orderQuantity, total, userName, userEmail };
+        
+        const data = { address, contact, orderQuantity, total, userName, userEmail, item };
 
         console.log(data);
-        
+
         if (orderQuantity >= minimumQuantity) {
             if (orderQuantity < quantity) {
 
